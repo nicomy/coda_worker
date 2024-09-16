@@ -1,0 +1,15 @@
+# Codabench Worker
+services:
+    worker:
+        image: codalab/competitions-v2-compute-worker:latest
+        container_name: compute_worker
+        volumes:
+            - /codabench:/codabench
+            - /var/run/docker.sock:/var/run/docker.sock
+        env_file:
+            - .env
+        restart: unless-stopped
+        logging:
+            options:
+                max-size: 50m
+                max-file: 3
