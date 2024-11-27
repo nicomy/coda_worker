@@ -11,7 +11,7 @@ nb_workers_deploy = 3
 print("Script Name:", sys.argv[0])  # Name of the script
 if len(sys.argv) > 1:
     print("Arguments:", sys.argv[1:])  # List of arguments
-    nb_workers_deploy =sys.argv[1:]
+    nb_workers_deploy =sys.argv[1]
 else:
     print("No arguments passed. Using default number of workers :", nb_workers_deploy)
 
