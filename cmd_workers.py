@@ -23,8 +23,8 @@ print("running script with parameteers : ", nb_workers_deploy, cmd)
 
 
 dic_cmd_to_real_cmd = {
-    "up" : "sudo docker-compose up -d ",
-    "down" : "sudo docker-compose down",
+    "up" : "sudo docker compose up -d ",
+    "down" : "sudo docker compose down",
     "logs" : "sudo docker compose logs"
 }
 
